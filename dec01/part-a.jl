@@ -1,9 +1,9 @@
-using CSV, DataFrames
+include("../scripts/common.jl")
 
 filename = "dec01/example.txt"
 # filename = "dec01/input.txt"
 
-location_ids = CSV.read(filename, DataFrame, header=false, delim=' ', ignorerepeated=true)
+location_ids = aoc_read_csv(filename)
 
 first_list = location_ids[:, 1]
 second_list = location_ids[:, 2]
