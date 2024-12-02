@@ -1,7 +1,7 @@
 include("../scripts/common.jl")
 
-filename = "dec01/example.txt"
-# filename = "dec01/input.txt"
+filename = "dec01/01-example.txt"
+# filename = "dec01/01-input.txt"
 
 location_ids = aoc_read_csv(filename)
 
