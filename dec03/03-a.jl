@@ -1,6 +1,6 @@
 include("../scripts/common.jl")
 
-# filename = "dec03/03-example.txt"
+# filename = "dec03/03-example-a.txt"
 filename = "dec03/03-input.txt"
 
 instruction_lines = aoc_read_lines(filename)
