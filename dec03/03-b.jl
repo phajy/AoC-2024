@@ -8,7 +8,7 @@ instruction_lines = aoc_read_lines(filename)
 total = 0
 factor = 1
 for instruction in instruction_lines
-    for m in eachmatch(r"(mul\(([0-9]|[0-9][0-9]|[0-9][0-9][0-9]),([0-9]|[0-9][0-9]|[0-9][0-9][0-9])\)|don\'t\(\)|do\(\))", instruction)
+    for m in eachmatch(r"(mul\(([0-9]{1,3}),([0-9]{1,3})\)|don\'t\(\)|do\(\))", instruction)
         if m.match == "do()"
             factor = 1
         end
