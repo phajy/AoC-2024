@@ -6,3 +6,5 @@ Advent of Code 2024
     - `[1:end .!= i]` to get all elements except the i-th element.
 - 03:
     - `[0-9]{1,3}` in regular expression to match 1 to 3 times in this case.
+- 04:
+    - Not a very elegant solution but it works.
