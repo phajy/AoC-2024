@@ -14,6 +14,13 @@ function aoc_read_lines(filename)
     return lines
 end
 
+# Read a 2D block of text into a 2D array of characters
+function aoc_read_block(filename)
+    lines = aoc_read_lines(filename)
+    grid = [collect(x) for x in lines]
+    return grid
+end
+
 # Split a string into an array of integers
 function aoc_split_integers(line)
     return [parse(Int, x) for x in split(line)]
