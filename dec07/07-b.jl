@@ -1,3 +1,5 @@
+using ProgressMeter
+
 include("../scripts/common.jl")
 
 # filename = "dec07/07-example.txt"
@@ -10,7 +12,7 @@ base = length(operators)
 
 total = 0
 
-for inst in all_inst
+@showprogress dt=1 desc="Computing..." for inst in all_inst
     split_inst = split(inst, r"(: | )")
     split_inst = parse.(Int, split_inst)
     num_ops = length(split_inst) - 2
