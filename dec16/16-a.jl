@@ -1,5 +1,3 @@
-# 2025-01-02 completely redesign the logic which wasn't working on the full case anyway!
-
 include("../scripts/common.jl")
 
 begin
@@ -14,6 +12,8 @@ end
 begin
     end_x = -1
     end_y = -1
+    paths = []
+    costs = []
     for y in 1:y_size
         for x in 1:x_size
             if maze[y, x] == 'S'
